@@ -6,10 +6,24 @@
     <description>Recent content on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Aug 2019 21:49:26 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 21:54:15 -0400</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何用Hugo搭建个人博客</title>
+      <link>http://example.org/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Wed, 28 Aug 2019 21:54:15 -0400</pubDate>
+      
+      <guid>http://example.org/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这里说一说如何用Hugo搭建个人博客。
+安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。
+创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。
+添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。
+cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  写第一篇博文 在终端中键入hugo new 第一篇博客.md。然后打开myblog文件夹，找到posts/第一篇博客.md 并用markdown编辑器对内容进行编辑。 注意还要把上面签名部分的draft: true改为draft: false才能顺利发布于众，否则就是草稿形式。
+开启Hugo服务器 在终端键入hugo server -D即可开启服务器，此时进入localhost:1313可以看到搭建好的博客。</description>
+    </item>
     
     <item>
       <title>开博大吉</title>

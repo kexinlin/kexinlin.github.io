@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>林可欣的个人博客  | 如何用Hugo搭建个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="如何用Hugo搭建个人博客" />
+<meta property="og:description" content="这里说一说如何用Hugo搭建个人博客。
+安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。
+创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。
+添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。
+cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  写第一篇博文 在终端中键入hugo new 第一篇博客.md。然后打开myblog文件夹，找到posts/第一篇博客.md 并用markdown编辑器对内容进行编辑。 注意还要把上面签名部分的draft: true改为draft: false才能顺利发布于众，否则就是草稿形式。
+开启Hugo服务器 在终端键入hugo server -D即可开启服务器，此时进入localhost:1313可以看到搭建好的博客。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+<meta property="article:published_time" content="2019-08-28T21:54:15-04:00" />
+<meta property="article:modified_time" content="2019-08-28T21:54:15-04:00" />
+<meta itemprop="name" content="如何用Hugo搭建个人博客">
+<meta itemprop="description" content="这里说一说如何用Hugo搭建个人博客。
+安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。
+创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。
+添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。
+cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  写第一篇博文 在终端中键入hugo new 第一篇博客.md。然后打开myblog文件夹，找到posts/第一篇博客.md 并用markdown编辑器对内容进行编辑。 注意还要把上面签名部分的draft: true改为draft: false才能顺利发布于众，否则就是草稿形式。
+开启Hugo服务器 在终端键入hugo server -D即可开启服务器，此时进入localhost:1313可以看到搭建好的博客。">
+
+
+<meta itemprop="datePublished" content="2019-08-28T21:54:15-04:00" />
+<meta itemprop="dateModified" content="2019-08-28T21:54:15-04:00" />
+<meta itemprop="wordCount" content="39">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何用Hugo搭建个人博客"/>
+<meta name="twitter:description" content="这里说一说如何用Hugo搭建个人博客。
+安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。
+创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。
+添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。
+cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  写第一篇博文 在终端中键入hugo new 第一篇博客.md。然后打开myblog文件夹，找到posts/第一篇博客.md 并用markdown编辑器对内容进行编辑。 注意还要把上面签名部分的draft: true改为draft: false才能顺利发布于众，否则就是草稿形式。
+开启Hugo服务器 在终端键入hugo server -D即可开启服务器，此时进入localhost:1313可以看到搭建好的博客。"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      林可欣的个人博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">如何用Hugo搭建个人博客</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-08-28T21:54:15-04:00">August 28, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p>这里说一说如何用Hugo搭建个人博客。</p>
+
+<h4 id="安装hugo">安装Hugo</h4>
+
+<p>首先打开终端，然后输入<code>brew install hugo</code>，即可完成安装。</p>
+
+<h4 id="创建新站点">创建新站点</h4>
+
+<p>首先用<code>cd</code>到合适的位置，比如桌面，接下来输入<code>hugo new site myblog</code>，其中“myblog”可以替换为任意合适的名字。</p>
+
+<h4 id="添加主题">添加主题</h4>
+
+<p>下面展示如何添加默认主题ananke，<code>cd</code>到的位置应为刚才通过<code>hugo</code>命令新创建的文件夹中，以下仍以<code>myblog</code>为例。</p>
+
+<pre><code class="language-sh">cd myblog
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+</code></pre>
+
+<h4 id="写第一篇博文">写第一篇博文</h4>
+
+<p>在终端中键入<code>hugo new 第一篇博客.md</code>。然后打开myblog文件夹，找到<code>posts/第一篇博客.md </code>并用markdown编辑器对内容进行编辑。
+注意还要把上面签名部分的<code>draft: true</code>改为<code>draft: false</code>才能顺利发布于众，否则就是草稿形式。</p>
+
+<h4 id="开启hugo服务器">开启Hugo服务器</h4>
+
+<p>在终端键入<code>hugo server -D</code>即可开启服务器，此时进入<code>localhost:1313</code>可以看到搭建好的博客。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 林可欣的个人博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
