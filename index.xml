@@ -5,7 +5,7 @@
     <link>https://kexinlin.github.io/</link>
     <description>Recent content on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 31 Aug 2019 19:39:35 -0400</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -18,27 +18,7 @@
       
       <guid>https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
       <description>HTML 是谁发明的 HTML的发明者是Tim Berners-Lee，也叫李爵士。他写了第一个浏览器、第一个服务器，用自己写的浏览器访问了自己写的服务器。他发明了WWW，同时发明了URL、HTML以及HTTP。 2017年，李爵士获得图灵奖。
-HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  章节标签 章节标签主要用来表示文章/书的层级，下面介绍几个比较常见的。
-h1~h6：表示标题，其中数字越小表示层级越高。在HTML的默认样式中，标题会被加粗。
-section：表示段落。
-article：表示文章。
-p：表示段落。
-header：表示头部，和footer对应。
-footer：表示尾部，和header对应。
-main：表示主要内容，和aside对应。
-aside：表示旁支内容，和main对应。
-div：表示划分。
-全局属性 全局属性是所有标签都有的属性，下面介绍几个常见的。
-class：表示分类，需要注意的是在style中，.xxx可以用来匹配class名称中空格分隔的一部分，而[class=xxx]则是精准匹配。
-contenteditable：表示元素可以被用户所编辑。
-hidden：表示元素被隐藏，页面上不可见。
-id：有说法是如果是全局唯一就用id，如果不是唯一用class，但这一说法并不算准确。建议是不到万不得已不要用id，原因一：id不唯一时不报错；原因二：如果id名覆盖了专用名词，用js控制该id的时候就会失效（比如，如果有id叫parent，parent.style.border = &amp;quot;10px solid green&amp;quot;就不管用）。
-style：用于指定样式，优先级高于css（另外，js会覆盖style，因此优先级最高）。
-tabindex：指定按tab键访问到的顺序，从小到大。另外注意，tabindex=0是tab访问的最后一个，tabindex=-1是tab永远访问不到的。
-title：鼠标放上去后浮出展示的完整内容。
-内容标签 ol + li：表示ordered list + list item。
-ul + li：表示unordered list + list item。
-dl + dt + dd：表示description list + term + data。</description>
+HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  章节标签 章节标签主要用来表示文章/书的层级，下面介绍几个比较常见的。</description>
     </item>
     
     <item>
@@ -51,8 +31,7 @@ dl + dt + dd：表示description list + term + data。</description>
 安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。
 创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。
 添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。
-cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  写第一篇博文 在终端中键入hugo new 第一篇博客.md。然后打开myblog文件夹，找到posts/第一篇博客.md 并用markdown编辑器对内容进行编辑。 注意还要把上面签名部分的draft: true改为draft: false才能顺利发布于众，否则就是草稿形式。
-开启Hugo服务器 在终端键入hugo server -D即可开启服务器，此时进入localhost:1313可以看到搭建好的博客。</description>
+cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  写第一篇博文 在终端中键入hugo new 第一篇博客.</description>
     </item>
     
     <item>
@@ -62,6 +41,24 @@ cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ana
       
       <guid>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
       <description>这是我的第一篇测试博客。</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://kexinlin.github.io/about/</link>
+      <pubDate>Thu, 01 Aug 2019 21:49:26 -0400</pubDate>
+      
+      <guid>https://kexinlin.github.io/about/</guid>
+      <description>这里是测试。</description>
+    </item>
+    
+    <item>
+      <title>归档</title>
+      <link>https://kexinlin.github.io/archives/</link>
+      <pubDate>Thu, 01 Aug 2019 20:30:26 -0400</pubDate>
+      
+      <guid>https://kexinlin.github.io/archives/</guid>
+      <description></description>
     </item>
     
   </channel>

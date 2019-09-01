@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>如何用Hugo搭建个人博客 | 林可欣的个人博客</title>
-    <meta property="og:title" content="如何用Hugo搭建个人博客 - 林可欣的个人博客">
+    <title>归档 | 林可欣的个人博客</title>
+    <meta property="og:title" content="归档 - 林可欣的个人博客">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2019-08-28T21:54:15&#43;08:00">
+    <meta property="article:published_time" content="2019-08-01T20:30:26&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2019-08-28T21:54:15&#43;08:00">
+    <meta property="article:modified_time" content="2019-08-01T20:30:26&#43;08:00">
         
     <meta name="Keywords" content="互联网,产品经理,互联网求职,互联网资讯,产品分析,BAT,博客,计算机科学,软件工程">
-    <meta name="description" content="如何用Hugo搭建个人博客">
+    <meta name="description" content="关于产品经理的求职与成长">
         
     <meta name="author" content="林可欣">
-    <meta property="og:url" content="https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+    <meta property="og:url" content="https://kexinlin.github.io/archives/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
@@ -36,6 +36,7 @@
     
     
 </head>
+
 
 <body>
 <header id="header" class="clearfix">
@@ -57,7 +58,7 @@
                     
                     <a  href="https://kexinlin.github.io/contact/" title="联系我">联系我</a>
                     
-                    <a  href="https://kexinlin.github.io/archives/" title="归档">归档</a>
+                    <a class="current" href="https://kexinlin.github.io/archives/" title="归档">归档</a>
                     
                 </nav>
             </div>
@@ -67,108 +68,36 @@
 
 
 <div id="body">
-        
-        
     <div class="container">
         <div class="col-group">
 
             <div class="col-8" id="main">
-                <div class="res-cons">
-                    <article class="post">
-                        <header>
-                            <h1 class="post-title">如何用Hugo搭建个人博客</h1>
-                        </header>
-                        <date class="post-meta meta-date">
-                            2019年8月28日
-                        </date>
-                        
-                        
-                        
-                        <div class="post-content">
-                            
-
-<p>这里说一说如何用Hugo搭建个人博客。</p>
-
-<h4 id="安装hugo">安装Hugo</h4>
-
-<p>首先打开终端，然后输入<code>brew install hugo</code>，即可完成安装。</p>
-
-<h4 id="创建新站点">创建新站点</h4>
-
-<p>首先用<code>cd</code>到合适的位置，比如桌面，接下来输入<code>hugo new site myblog</code>，其中“myblog”可以替换为任意合适的名字。</p>
-
-<h4 id="添加主题">添加主题</h4>
-
-<p>下面展示如何添加默认主题ananke，<code>cd</code>到的位置应为刚才通过<code>hugo</code>命令新创建的文件夹中，以下仍以<code>myblog</code>为例。</p>
-
-<pre><code class="language-sh">cd myblog
-git init
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
-</code></pre>
-
-<h4 id="写第一篇博文">写第一篇博文</h4>
-
-<p>在终端中键入<code>hugo new 第一篇博客.md</code>。然后打开myblog文件夹，找到<code>posts/第一篇博客.md </code>并用markdown编辑器对内容进行编辑。
-注意还要把上面签名部分的<code>draft: true</code>改为<code>draft: false</code>才能顺利发布于众，否则就是草稿形式。</p>
-
-<h4 id="开启hugo服务器">开启Hugo服务器</h4>
-
-<p>在终端键入<code>hugo server -D</code>即可开启服务器，此时进入<code>localhost:1313</code>可以看到搭建好的博客。</p>
-
-                        </div>
-
-                        
-
-
-                        
-
-<div class="post-archive">
-    <h2>See Also</h2>
-    <ul class="listing">
-        
-        <li><a href="/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">开博大吉</a></li>
-        
-        <li><a href="/about/">关于我</a></li>
-        
-        <li><a href="/archives/">归档</a></li>
-        
-    </ul>
-</div>
-
-
-                        <div class="post-meta meta-tags">
-                            
-                            没有标签
-                            
-                        </div>
-                    </article>
+                <div class="post-archive">
                     
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    <h2>2019</h2>
+                    <ul class="listing">
+                        
+                        <li>
+                            <span class="date">2019/08/31</span>
+                            <a href="https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" title="HTML入门笔记1">HTML入门笔记1</a>
+                        </li>
+                        
+                        <li>
+                            <span class="date">2019/08/28</span>
+                            <a href="https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="如何用Hugo搭建个人博客">如何用Hugo搭建个人博客</a>
+                        </li>
+                        
+                        <li>
+                            <span class="date">2019/08/28</span>
+                            <a href="https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" title="开博大吉">开博大吉</a>
+                        </li>
+                        
+                    </ul>
+                    
 
-    
-    
                 </div>
             </div>
+
             <div id="secondary">
     <section class="widget">
         <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
@@ -256,6 +185,7 @@ echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
 
 
 

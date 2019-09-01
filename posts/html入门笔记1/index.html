@@ -1,172 +1,209 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>林可欣的个人博客  | HTML入门笔记1</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.57.2" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML入门笔记1 | 林可欣的个人博客</title>
+    <meta property="og:title" content="HTML入门笔记1 - 林可欣的个人博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2019-08-31T19:39:35&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2019-08-31T19:39:35&#43;08:00">
+        
+    <meta name="Keywords" content="互联网,产品经理,互联网求职,互联网资讯,产品分析,BAT,博客,计算机科学,软件工程">
+    <meta name="description" content="HTML入门笔记1">
+        
+    <meta name="author" content="林可欣">
+    <meta property="og:url" content="https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
     
+        <link rel="stylesheet" href="/css/prism.css">
     
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    
-
-    
-    
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
-    
-
-    
-
-    
-      
-    
-
-    
-
-    <meta property="og:title" content="HTML入门笔记1" />
-<meta property="og:description" content="HTML 是谁发明的 HTML的发明者是Tim Berners-Lee，也叫李爵士。他写了第一个浏览器、第一个服务器，用自己写的浏览器访问了自己写的服务器。他发明了WWW，同时发明了URL、HTML以及HTTP。 2017年，李爵士获得图灵奖。
-HTML 起手应该写什么 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt;  章节标签 章节标签主要用来表示文章/书的层级，下面介绍几个比较常见的。
-h1~h6：表示标题，其中数字越小表示层级越高。在HTML的默认样式中，标题会被加粗。
-section：表示段落。
-article：表示文章。
-p：表示段落。
-header：表示头部，和footer对应。
-footer：表示尾部，和header对应。
-main：表示主要内容，和aside对应。
-aside：表示旁支内容，和main对应。
-div：表示划分。
-全局属性 全局属性是所有标签都有的属性，下面介绍几个常见的。
-class：表示分类，需要注意的是在style中，.xxx可以用来匹配class名称中空格分隔的一部分，而[class=xxx]则是精准匹配。
-contenteditable：表示元素可以被用户所编辑。
-hidden：表示元素被隐藏，页面上不可见。
-id：有说法是如果是全局唯一就用id，如果不是唯一用class，但这一说法并不算准确。建议是不到万不得已不要用id，原因一：id不唯一时不报错；原因二：如果id名覆盖了专用名词，用js控制该id的时候就会失效（比如，如果有id叫parent，parent.style.border = &quot;10px solid green&quot;就不管用）。
-style：用于指定样式，优先级高于css（另外，js会覆盖style，因此优先级最高）。
-tabindex：指定按tab键访问到的顺序，从小到大。另外注意，tabindex=0是tab访问的最后一个，tabindex=-1是tab永远访问不到的。
-title：鼠标放上去后浮出展示的完整内容。
-内容标签 ol &#43; li：表示ordered list &#43; list item。
-ul &#43; li：表示unordered list &#43; list item。
-dl &#43; dt &#43; dd：表示description list &#43; term &#43; data。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" />
-<meta property="article:published_time" content="2019-08-31T19:39:35-04:00" />
-<meta property="article:modified_time" content="2019-08-31T19:39:35-04:00" />
-<meta itemprop="name" content="HTML入门笔记1">
-<meta itemprop="description" content="HTML 是谁发明的 HTML的发明者是Tim Berners-Lee，也叫李爵士。他写了第一个浏览器、第一个服务器，用自己写的浏览器访问了自己写的服务器。他发明了WWW，同时发明了URL、HTML以及HTTP。 2017年，李爵士获得图灵奖。
-HTML 起手应该写什么 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt;  章节标签 章节标签主要用来表示文章/书的层级，下面介绍几个比较常见的。
-h1~h6：表示标题，其中数字越小表示层级越高。在HTML的默认样式中，标题会被加粗。
-section：表示段落。
-article：表示文章。
-p：表示段落。
-header：表示头部，和footer对应。
-footer：表示尾部，和header对应。
-main：表示主要内容，和aside对应。
-aside：表示旁支内容，和main对应。
-div：表示划分。
-全局属性 全局属性是所有标签都有的属性，下面介绍几个常见的。
-class：表示分类，需要注意的是在style中，.xxx可以用来匹配class名称中空格分隔的一部分，而[class=xxx]则是精准匹配。
-contenteditable：表示元素可以被用户所编辑。
-hidden：表示元素被隐藏，页面上不可见。
-id：有说法是如果是全局唯一就用id，如果不是唯一用class，但这一说法并不算准确。建议是不到万不得已不要用id，原因一：id不唯一时不报错；原因二：如果id名覆盖了专用名词，用js控制该id的时候就会失效（比如，如果有id叫parent，parent.style.border = &quot;10px solid green&quot;就不管用）。
-style：用于指定样式，优先级高于css（另外，js会覆盖style，因此优先级最高）。
-tabindex：指定按tab键访问到的顺序，从小到大。另外注意，tabindex=0是tab访问的最后一个，tabindex=-1是tab永远访问不到的。
-title：鼠标放上去后浮出展示的完整内容。
-内容标签 ol &#43; li：表示ordered list &#43; list item。
-ul &#43; li：表示unordered list &#43; list item。
-dl &#43; dt &#43; dd：表示description list &#43; term &#43; data。">
-
-
-<meta itemprop="datePublished" content="2019-08-31T19:39:35-04:00" />
-<meta itemprop="dateModified" content="2019-08-31T19:39:35-04:00" />
-<meta itemprop="wordCount" content="84">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HTML入门笔记1"/>
-<meta name="twitter:description" content="HTML 是谁发明的 HTML的发明者是Tim Berners-Lee，也叫李爵士。他写了第一个浏览器、第一个服务器，用自己写的浏览器访问了自己写的服务器。他发明了WWW，同时发明了URL、HTML以及HTTP。 2017年，李爵士获得图灵奖。
-HTML 起手应该写什么 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt;  章节标签 章节标签主要用来表示文章/书的层级，下面介绍几个比较常见的。
-h1~h6：表示标题，其中数字越小表示层级越高。在HTML的默认样式中，标题会被加粗。
-section：表示段落。
-article：表示文章。
-p：表示段落。
-header：表示头部，和footer对应。
-footer：表示尾部，和header对应。
-main：表示主要内容，和aside对应。
-aside：表示旁支内容，和main对应。
-div：表示划分。
-全局属性 全局属性是所有标签都有的属性，下面介绍几个常见的。
-class：表示分类，需要注意的是在style中，.xxx可以用来匹配class名称中空格分隔的一部分，而[class=xxx]则是精准匹配。
-contenteditable：表示元素可以被用户所编辑。
-hidden：表示元素被隐藏，页面上不可见。
-id：有说法是如果是全局唯一就用id，如果不是唯一用class，但这一说法并不算准确。建议是不到万不得已不要用id，原因一：id不唯一时不报错；原因二：如果id名覆盖了专用名词，用js控制该id的时候就会失效（比如，如果有id叫parent，parent.style.border = &quot;10px solid green&quot;就不管用）。
-style：用于指定样式，优先级高于css（另外，js会覆盖style，因此优先级最高）。
-tabindex：指定按tab键访问到的顺序，从小到大。另外注意，tabindex=0是tab访问的最后一个，tabindex=-1是tab永远访问不到的。
-title：鼠标放上去后浮出展示的完整内容。
-内容标签 ol &#43; li：表示ordered list &#43; list item。
-ul &#43; li：表示unordered list &#43; list item。
-dl &#43; dt &#43; dd：表示description list &#43; term &#43; data。"/>
-
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
-   
-  
-
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="https://kexinlin.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
-      林可欣的个人博客
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      
 
 
+    
+    
+</head>
 
-
-
-
-
-
-
-
-
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://kexinlin.github.io">
+                        林可欣的个人博客
+                    </a>
+                
+                <p class="description">关于产品经理的求职与成长</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://kexinlin.github.io">首页</a>
+                    
+                    <a  href="https://kexinlin.github.io/about/" title="关于">关于</a>
+                    
+                    <a  href="https://kexinlin.github.io/contact/" title="联系我">联系我</a>
+                    
+                    <a  href="https://kexinlin.github.io/archives/" title="归档">归档</a>
+                    
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
+</header>
+
+
+<div id="body">
+        
+        <div id="virtual_toc_list" style="display: none">
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#html-是谁发明的">HTML 是谁发明的</a></li>
+<li><a href="#html-起手应该写什么">HTML 起手应该写什么</a></li>
+<li><a href="#章节标签">章节标签</a></li>
+<li><a href="#全局属性">全局属性</a></li>
+<li><a href="#内容标签">内容标签</a></li>
+</ul></li>
+</ul>
 </nav>
+        </div>
+        <div id="float_toc_div" style="margin: 10px;border: 1px solid gray;z-index:99999;display: none;">
+            <header style="background-color: #f3f3f3;color: black;border-bottom: 1px solid gray;padding: 10px 10px 10px 10px;">
+                <strong id="toc_btn_open" style="color: black;font-size: large;">目录</strong>
+                <strong id="toc_btn_close" style="color: black;font-size: large;float: right">╳</strong>
+            </header>
+            <div id="toc_list" style="background-color: #f3f3f3;color: black;padding: 10px;">
+        
+            </div>
+        </div>
+        <style type="text/css">
+            #float_toc_div {
+                position: fixed;
+                display: none;
+                 
+                height: auto;
+                font-size: 13px;
+            }
+        
+            #toc_list a:hover,
+            #toc_list a:active {
+                color: #ba3925;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+                let tocNavElem = document.getElementById("TableOfContents");
+                let floatTocDivElem = document.getElementById("float_toc_div");
+                let tocListElem = floatTocDivElem.getElementsByTagName('div')[0];
+                let colGroupElem = document.getElementById("body").getElementsByClassName("col-group")[0]
+                let floatTocWidth = (document.body.clientWidth - colGroupElem.offsetWidth) / 2 - 16;
+                var useFloatToc = false;
 
-    </div>
-  </header>
+                if (floatTocWidth >= 100) {
+                    useFloatToc = true;
+                    document.getElementById("toc_list").appendChild(tocNavElem);
+                    floatTocDivElem.style.display = 'block';
+                    floatTocDivElem.style.width = floatTocWidth + 'px';
+                    top();
+                    floatTocDivElem.style.left = '0px';
 
+                    function top() {
+                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
+                            floatTocDivElem.style.top = '0px';
+                        } else {
+                            floatTocDivElem.style.top = window.innerHeight / 9 + 'px';
+                        }
+                    }
 
+                    function ishide() {
+                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
+                            floatTocDivElem.style.top = '0px';
+                        } else {
+                            floatTocDivElem.style.display = 'block';
+                        }
+                    }
 
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+                    window.onscroll = function () {
+                        ishide();
+                        if ((document.documentElement.scrollTop != 0) && (floatTocDivElem.style.display == 'block')) {
+                            top();
+                        }
+                    };
 
-    <header class="mt4 w-100">
-      <p class="f6 b helvetica tracked">
-          
-        POSTS
-      </p>
-      <h1 class="f1 athelas mb1">HTML入门笔记1</h1>
-      
-      <time class="f6 mv4 dib tracked" datetime="2019-08-31T19:39:35-04:00">August 31, 2019</time>
-      
-      
-    </header>
+                    window.onresize = function () {
+                        ishide();
+                    }
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+                    document.getElementById("toc_btn_open").addEventListener('click', function () {
+                        switch (tocListElem.style.display) {
+                            case "none":
+                                document.getElementById("toc_btn_close").style.display = "";
+                                tocListElem.style.display = "";
+                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom = "1px solid gray";
+                                break;
+                            default:
+                                break;
+                        }
+                    }, false);
+
+                    document.getElementById("toc_btn_close").addEventListener('click', function () {
+                        switch (tocListElem.style.display) {
+                            case "":
+                                document.getElementById("toc_btn_close").style.display = "none";
+                                tocListElem.style.display = "none";
+                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom = "";
+                                break;
+                            default:
+                                break;
+                        }
+                    }, false);
+                } else {
+                    let fixedTocElem = document.getElementsByClassName("toc-article")[0];
+                    fixedTocElem.appendChild(tocNavElem);
+                    fixedTocElem.parentElement.style.display = "";
+                }
+                document.getElementById("virtual_toc_list").remove();
+            };   
+        </script>
+        
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">HTML入门笔记1</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2019年8月31日
+                        </date>
+                        
+                        
+                        
+                        <div class="clear" style="display: none">
+                            <div class="toc-article">
+                                <div class="toc-title">文章目录</div>
+                            </div>
+                        </div>
+                        
+                        <div class="post-content">
+                            
 
 <h2 id="html-是谁发明的">HTML 是谁发明的</h2>
 
@@ -254,49 +291,154 @@ dl &#43; dt &#43; dd：表示description list &#43; term &#43; data。"/>
 <p><strong>quote</strong>：表示非换行引用。</p>
 
 <p><strong>blockquote</strong>：表示块级引用。</p>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6">
-      
-      
-      </div>
-    </section>
 
-    <aside class="w-30-l mt6-l">
+                        </div>
+
+                        
 
 
+                        
 
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://kexinlin.github.io" >
-    &copy; 2019 林可欣的个人博客
-  </a>
-    <div>
-
-
-
-
-
-
-
-
-
-
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">如何用Hugo搭建个人博客</a></li>
+        
+        <li><a href="/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">开博大吉</a></li>
+        
+        <li><a href="/about/">关于我</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+    </ul>
 </div>
-  </div>
-</footer>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            没有标签
+                            
+                        </div>
+                    </article>
+                    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://kexinlin.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" title="HTML入门笔记1">HTML入门笔记1</a>
+    </li>
+    
+    <li>
+        <a href="https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="如何用Hugo搭建个人博客">如何用Hugo搭建个人博客</a>
+    </li>
+    
+    <li>
+        <a href="https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" title="开博大吉">开博大吉</a>
+    </li>
+    
+</ul>
+    </section>
 
     
 
-  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://kexinlin.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="https://kexinlin.github.io">林可欣的个人博客 By 林可欣</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
 
 
-  </body>
+    
+    <script type="text/javascript">
+        
+        (function () {
+            $("pre code").parent().addClass("line-numbers")
+        }());
+
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+</body>
 </html>
