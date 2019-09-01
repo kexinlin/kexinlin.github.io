@@ -6,33 +6,10 @@
     <description>Recent content on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Aug 2019 19:39:35 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 21:49:26 -0400</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>HTML入门笔记1</title>
-      <link>https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
-      <pubDate>Sat, 31 Aug 2019 19:39:35 -0400</pubDate>
-      
-      <guid>https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
-      <description>HTML 是谁发明的 HTML的发明者是Tim Berners-Lee，也叫李爵士。他写了第一个浏览器、第一个服务器，用自己写的浏览器访问了自己写的服务器。他发明了WWW，同时发明了URL、HTML以及HTTP。 2017年，李爵士获得图灵奖。
-HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  章节标签 章节标签主要用来表示文章/书的层级，下面介绍几个比较常见的。</description>
-    </item>
-    
-    <item>
-      <title>如何用Hugo搭建个人博客</title>
-      <link>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Wed, 28 Aug 2019 21:54:15 -0400</pubDate>
-      
-      <guid>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>这里说一说如何用Hugo搭建个人博客。
-安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。
-创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。
-添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。
-cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  写第一篇博文 在终端中键入hugo new 第一篇博客.</description>
-    </item>
     
     <item>
       <title>开博大吉</title>
@@ -44,39 +21,39 @@ cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ana
     </item>
     
     <item>
+      <title>拼多多社交与低价的游戏化狂欢</title>
+      <link>https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A4%BE%E4%BA%A4%E4%B8%8E%E4%BD%8E%E4%BB%B7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96%E7%8B%82%E6%AC%A2/</link>
+      <pubDate>Mon, 20 May 2019 22:40:19 -0400</pubDate>
+      
+      <guid>https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A4%BE%E4%BA%A4%E4%B8%8E%E4%BD%8E%E4%BB%B7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96%E7%8B%82%E6%AC%A2/</guid>
+      <description>拼多多自上线初用户量快速崛起，GMV一路高歌猛增。截至2018年年底，年度活跃买家数量已超过京东，其汹汹来势惊讶了许多人，也引发了关于消费降级的探讨。 在中国经济持续增长，连续三年成为最大奢侈品市场，有关消费升级的讨论纷纷不绝的时候，为何杀出的黑马却是主张便宜实惠的拼多多？ 此分析报告基于拼多多的三大产品核心：价格刺激、社交传播、游戏化体验进行探讨。 一、产品简介 拼多多是一款移动电商APP，核心功能是为用户提供高性价比商品以及互动的购物体验。 用户可以通过发起和朋友、家人等的拼单，用更低的价格购买商品，并且可以享受APP内秒杀、砍价、签到领红包等多种优惠活动。 二、行业背景 1. 移动购物行业用户规模快速增长</description>
+    </item>
+    
+    <item>
+      <title>如何用Hugo搭建个人博客</title>
+      <link>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 02 May 2019 21:54:15 -0400</pubDate>
+      
+      <guid>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这里说一说如何用Hugo搭建个人博客。 安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。 创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。 添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。 cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 写第一篇博文 在终端中键入hugo new 第一篇博客.md。然后打开myblog文件夹，找到posts/第一篇博客.md 并用markdown编辑器对内容进行编辑。 注意还要把上面签名部分的draft: true改为draft</description>
+    </item>
+    
+    <item>
       <title>关于我</title>
       <link>https://kexinlin.github.io/about/</link>
-      <pubDate>Thu, 01 Aug 2019 21:49:26 -0400</pubDate>
+      <pubDate>Wed, 01 May 2019 21:49:26 -0400</pubDate>
       
       <guid>https://kexinlin.github.io/about/</guid>
-      <description>这里是测试。</description>
+      <description>test</description>
     </item>
     
     <item>
       <title>归档</title>
       <link>https://kexinlin.github.io/archives/</link>
-      <pubDate>Thu, 01 Aug 2019 20:30:26 -0400</pubDate>
+      <pubDate>Wed, 01 May 2019 20:30:26 -0400</pubDate>
       
       <guid>https://kexinlin.github.io/archives/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>产品分析 | 拼多多社交与低价的游戏化狂欢</title>
-      <link>https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A4%BE%E4%BA%A4%E4%B8%8E%E4%BD%8E%E4%BB%B7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96%E7%8B%82%E6%AC%A2/</link>
-      <pubDate>Mon, 20 May 2019 22:40:19 -0400</pubDate>
-      
-      <guid>https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A4%BE%E4%BA%A4%E4%B8%8E%E4%BD%8E%E4%BB%B7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96%E7%8B%82%E6%AC%A2/</guid>
-      <description>拼多多自上线初用户量快速崛起，GMV一路高歌猛增。截至2018年年底，年度活跃买家数量已超过京东，其汹汹来势惊讶了许多人，也引发了关于消费降级的探讨。
-在中国经济持续增长，连续三年成为最大奢侈品市场，有关消费升级的讨论纷纷不绝的时候，为何杀出的黑马却是主张便宜实惠的拼多多？
-此分析报告基于拼多多的三大产品核心：价格刺激、社交传播、游戏化体验进行探讨。
- 一、产品简介 拼多多是一款移动电商APP，核心功能是为用户提供高性价比商品以及互动的购物体验。
-用户可以通过发起和朋友、家人等的拼单，用更低的价格购买商品，并且可以享受APP内秒杀、砍价、签到领红包等多种优惠活动。
-二、行业背景 1. 移动购物行业用户规模快速增长 根据极光大数据发布的《2018年电商行业研究报告》，移动购物行业用户规模和渗透率在过去一年内快速增长，用户规模增长2亿，渗透率增长超过10个百分点。
-2. 城乡地区互联网普及率持续提升 CNNIC在《2019年第43次中国互联网络发展状况统计报告》中称，截至2018年12月，我国城镇地区互联网普及率为74.6%，较2017年底提升3.6个百分点；农村地区互联网普及率为38.4%，较2017年底提升3.0个百分点。此外，从15、16年开始，智能手机迅速向三四线城市以下普及。
-3. 电商获客成本不断上涨 电商行业经过十多年的发展，其模式不断成熟，流量被淘宝、京东等几家大平台占据，获客成本和运营成本不断上涨。
-根据毕马威发布的《中国零售服务业白皮书》，在2015至2016的关键临界点，平均线上获客成本突破200元，已超过线下获客成本。
-4. 微信生态承载大量流量 根据微信官方发布的《2018微信数据报告》，截至2018年9月，微信月活用户达到10.82。此外，QuestMobile在《中国移动互联网2018年度大报告》中称，微信人均单日使用时长同比增加近6分钟，生态价值不断放大。 三、市场背景 四、用户分析 1. 用户画像 2. 用户分析 根据国家统计局数据，2018年，农村居民人均可支配收入为14617元，相当于每天可支配收入仅为40元。而全国农村人口数量有57661万人，占比41.48%。此外，三四线城市城区人口数为一线城市的近3倍，是二线城市的2倍左右，三线以下城市及农村地区总共有约10亿人。</description>
     </item>
     
   </channel>
