@@ -6,19 +6,10 @@
     <description>Recent content on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Aug 2019 21:49:26 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2019 22:40:19 -0400</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>开博大吉</title>
-      <link>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
-      <pubDate>Wed, 28 Aug 2019 21:49:26 -0400</pubDate>
-      
-      <guid>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
-      <description>这是我的第一篇测试博客。</description>
-    </item>
     
     <item>
       <title>拼多多社交与低价的游戏化狂欢</title>
@@ -54,6 +45,15 @@
       
       <guid>https://kexinlin.github.io/archives/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>开博大吉</title>
+      <link>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <pubDate>Wed, 01 May 2019 00:49:26 -0400</pubDate>
+      
+      <guid>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <description>这是我的第一篇测试博客。</description>
     </item>
     
   </channel>
