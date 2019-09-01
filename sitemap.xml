@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kexinlin.github.io/posts/</loc>
-    <lastmod>2019-08-28T21:54:15-04:00</lastmod>
+    <loc>https://kexinlin.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</loc>
+    <lastmod>2019-08-31T19:39:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2019-08-28T21:54:15-04:00</lastmod>
+    <loc>https://kexinlin.github.io/posts/</loc>
+    <lastmod>2019-08-31T19:39:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://kexinlin.github.io/</loc>
+    <lastmod>2019-08-31T19:39:35-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2019-08-28T21:54:15-04:00</lastmod>
   </url>
   
