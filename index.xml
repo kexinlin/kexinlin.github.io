@@ -6,27 +6,27 @@
     <description>Recent content on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 20 May 2019 22:40:19 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 06 Sep 2019 21:54:26 -0400</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>拼多多社交与低价的游戏化狂欢</title>
-      <link>https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A4%BE%E4%BA%A4%E4%B8%8E%E4%BD%8E%E4%BB%B7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96%E7%8B%82%E6%AC%A2/</link>
-      <pubDate>Mon, 20 May 2019 22:40:19 -0400</pubDate>
+      <title>HTML常用标签</title>
+      <link>https://kexinlin.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Fri, 06 Sep 2019 21:54:26 -0400</pubDate>
       
-      <guid>https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A%E7%A4%BE%E4%BA%A4%E4%B8%8E%E4%BD%8E%E4%BB%B7%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96%E7%8B%82%E6%AC%A2/</guid>
-      <description>拼多多自上线初用户量快速崛起，GMV一路高歌猛增。截至2018年年底，年度活跃买家数量已超过京东，其汹汹来势惊讶了许多人，也引发了关于消费降级的探讨。 在中国经济持续增长，连续三年成为最大奢侈品市场，有关消费升级的讨论纷纷不绝的时候，为何杀出的黑马却是主张便宜实惠的拼多多？ 此分析报告基于拼多多的三大产品核心：价格刺激、社交传播、游戏化体验进行探讨。 一、产品简介 拼多多是一款移动电商APP，核心功能是为用户提供高性价比商品以及互动的购物体验。 用户可以通过发起和朋友、家人等的拼单，用更低的价格购买商品，并且可以享受APP内秒杀、砍价、签到领红包等多种优惠活动。 二、行业背景 1. 移动购物行业用户规模快速增长</description>
+      <guid>https://kexinlin.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>a 标签的用法 a标签的主要作用是： 跳转外部页面 跳转内部锚点 跳转到邮箱或电话等 a标签的属性有href、target、download、rel=noopener。 跳转到外部网址： href属性的值可以是 https://&amp;lt;网址&amp;gt;，或者 http://&amp;lt;网址&amp;gt;，或者//&amp;lt;网址&amp;gt;。 例子： &amp;lt;a href=&amp;quot;https://www.google.com&amp;quot;&amp;gt;谷歌&amp;lt;/a&amp;gt; 用//&amp;lt;网址&amp;gt;的好处是，在不确定是 https 还是 http 协议的情况下，这样不会错，因为会自动选到正确的。 跳转到路径： href属性的值可以是绝对路径也可以是相对路径。 这里绝对路径的根目</description>
     </item>
     
     <item>
-      <title>如何用Hugo搭建个人博客</title>
-      <link>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 02 May 2019 21:54:15 -0400</pubDate>
+      <title>开博大吉</title>
+      <link>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <pubDate>Thu, 02 May 2019 00:49:26 -0400</pubDate>
       
-      <guid>https://kexinlin.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>这里说一说如何用Hugo搭建个人博客。 安装Hugo 首先打开终端，然后输入brew install hugo，即可完成安装。 创建新站点 首先用cd到合适的位置，比如桌面，接下来输入hugo new site myblog，其中“myblog”可以替换为任意合适的名字。 添加主题 下面展示如何添加默认主题ananke，cd到的位置应为刚才通过hugo命令新创建的文件夹中，以下仍以myblog为例。 cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 写第一篇博文 在终端中键入hugo new 第一篇博客.md。然后打开myblog文件夹，找到posts/第一篇博客.md 并用markdown编辑器对内容进行编辑。 注意还要把上面签名部分的draft: true改为draft</description>
+      <guid>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <description>这是我的第一篇测试博客。</description>
     </item>
     
     <item>
@@ -45,15 +45,6 @@
       
       <guid>https://kexinlin.github.io/archives/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>开博大吉</title>
-      <link>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
-      <pubDate>Wed, 01 May 2019 00:49:26 -0400</pubDate>
-      
-      <guid>https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
-      <description>这是我的第一篇测试博客。</description>
     </item>
     
   </channel>
