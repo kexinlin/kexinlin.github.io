@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>拼多多社交与低价的游戏化狂欢 | 林可欣的个人博客</title>
+    <meta property="og:title" content="拼多多社交与低价的游戏化狂欢 - 林可欣的个人博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2019-05-20T22:40:19&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2019-05-20T22:40:19&#43;08:00">
+        
+    <meta name="Keywords" content="互联网,产品经理,互联网求职,互联网资讯,产品分析,BAT,博客,计算机科学,软件工程">
+    <meta name="description" content="拼多多社交与低价的游戏化狂欢">
+        
+    <meta name="author" content="林可欣">
+    <meta property="og:url" content="https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+        <link rel="stylesheet" href="/css/hugo-easy-gallery.css">
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://kexinlin.github.io">
+                        林可欣的个人博客
+                    </a>
+                
+                <p class="description">个人博客</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://kexinlin.github.io">首页</a>
+                    
+                    <a  href="https://kexinlin.github.io/about/" title="关于">关于</a>
+                    
+                    <a  href="https://kexinlin.github.io/contact/" title="联系我">联系我</a>
+                    
+                    <a  href="https://kexinlin.github.io/archives/" title="归档">归档</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+        
+        <div id="virtual_toc_list" style="display: none">
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#一-产品简介">一、产品简介</a></li>
+<li><a href="#二-行业背景">二、行业背景</a></li>
+<li><a href="#三-市场背景">三、市场背景</a></li>
+<li><a href="#四-用户分析">四、用户分析</a></li>
+<li><a href="#五-产品核心分析-价格刺激">五、产品核心分析：价格刺激</a></li>
+<li><a href="#六-产品核心分析-社交传播">六、产品核心分析：社交传播</a></li>
+<li><a href="#七-产品核心分析-游戏化体验">七、产品核心分析：游戏化体验</a></li>
+<li><a href="#八-产品核心分析-其它特点">八、产品核心分析：其它特点</a></li>
+<li><a href="#九-竞品分析">九、竞品分析</a></li>
+<li><a href="#十-现存困境">十、现存困境</a></li>
+<li><a href="#十一-如果我是-pm">十一、如果我是 PM</a></li>
+<li><a href="#十二-总结">十二、总结</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        <div id="float_toc_div" style="margin: 10px;border: 1px solid gray;z-index:99999;display: none;">
+            <header style="background-color: #f3f3f3;color: black;border-bottom: 1px solid gray;padding: 10px 10px 10px 10px;">
+                <strong id="toc_btn_open" style="color: black;font-size: large;">目录</strong>
+                <strong id="toc_btn_close" style="color: black;font-size: large;float: right">╳</strong>
+            </header>
+            <div id="toc_list" style="background-color: #f3f3f3;color: black;padding: 10px;">
+        
+            </div>
+        </div>
+        <style type="text/css">
+            #float_toc_div {
+                position: fixed;
+                display: none;
+                 
+                height: auto;
+                font-size: 13px;
+            }
+        
+            #toc_list a:hover,
+            #toc_list a:active {
+                color: #ba3925;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+                let tocNavElem = document.getElementById("TableOfContents");
+                let floatTocDivElem = document.getElementById("float_toc_div");
+                let tocListElem = floatTocDivElem.getElementsByTagName('div')[0];
+                let colGroupElem = document.getElementById("body").getElementsByClassName("col-group")[0]
+                let floatTocWidth = (document.body.clientWidth - colGroupElem.offsetWidth) / 2 - 16;
+                var useFloatToc = false;
+
+                if (floatTocWidth >= 100) {
+                    useFloatToc = true;
+                    document.getElementById("toc_list").appendChild(tocNavElem);
+                    floatTocDivElem.style.display = 'block';
+                    floatTocDivElem.style.width = floatTocWidth + 'px';
+                    top();
+                    floatTocDivElem.style.left = '0px';
+
+                    function top() {
+                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
+                            floatTocDivElem.style.top = '0px';
+                        } else {
+                            floatTocDivElem.style.top = window.innerHeight / 9 + 'px';
+                        }
+                    }
+
+                    function ishide() {
+                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
+                            floatTocDivElem.style.top = '0px';
+                        } else {
+                            floatTocDivElem.style.display = 'block';
+                        }
+                    }
+
+                    window.onscroll = function () {
+                        ishide();
+                        if ((document.documentElement.scrollTop != 0) && (floatTocDivElem.style.display == 'block')) {
+                            top();
+                        }
+                    };
+
+                    window.onresize = function () {
+                        ishide();
+                    }
+
+                    document.getElementById("toc_btn_open").addEventListener('click', function () {
+                        switch (tocListElem.style.display) {
+                            case "none":
+                                document.getElementById("toc_btn_close").style.display = "";
+                                tocListElem.style.display = "";
+                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom = "1px solid gray";
+                                break;
+                            default:
+                                break;
+                        }
+                    }, false);
+
+                    document.getElementById("toc_btn_close").addEventListener('click', function () {
+                        switch (tocListElem.style.display) {
+                            case "":
+                                document.getElementById("toc_btn_close").style.display = "none";
+                                tocListElem.style.display = "none";
+                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom = "";
+                                break;
+                            default:
+                                break;
+                        }
+                    }, false);
+                } else {
+                    let fixedTocElem = document.getElementsByClassName("toc-article")[0];
+                    fixedTocElem.appendChild(tocNavElem);
+                    fixedTocElem.parentElement.style.display = "";
+                }
+                document.getElementById("virtual_toc_list").remove();
+            };   
+        </script>
+        
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">拼多多社交与低价的游戏化狂欢</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2019年5月20日
+                        </date>
+                        
+                        
+                        
+                        <div class="clear" style="display: none">
+                            <div class="toc-article">
+                                <div class="toc-title">文章目录</div>
+                            </div>
+                        </div>
+                        
+                        <div class="post-content">
+                            
+
+<blockquote>
+<p>拼多多自上线初用户量快速崛起，GMV 一路高歌猛增。截至 2018 年年底，年度活跃买家数量已超过京东，其汹汹来势惊讶了许多人，也引发了关于消费降级的探讨。</p>
+
+<p>在中国经济持续增长，连续三年成为最大奢侈品市场，有关消费升级的讨论纷纷不绝的时候，为何杀出的黑马却是主张便宜实惠的拼多多？</p>
+
+<p>此分析报告基于拼多多的三大产品核心：价格刺激、社交传播、游戏化体验进行探讨。</p>
+</blockquote>
+
+<h3 id="一-产品简介">一、产品简介</h3>
+
+<p>拼多多是一款移动电商 APP，核心功能是为用户提供高性价比商品以及互动的购物体验。</p>
+
+<p>用户可以通过发起和朋友、家人等的拼单，用更低的价格购买商品，并且可以享受 APP 内秒杀、砍价、签到领红包等多种优惠活动。</p>
+
+
+
+
+
+  
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/1.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/1.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<h3 id="二-行业背景">二、行业背景</h3>
+
+<p><strong>1. 移动购物行业用户规模快速增长</strong></p>
+
+<p>根据极光大数据发布的《2018 年电商行业研究报告》，移动购物行业用户规模和渗透率在过去一年内快速增长，用户规模增长 2 亿，渗透率增长超过 10 个百分点。</p>
+
+<p><strong>2. 城乡地区互联网普及率持续提升</strong></p>
+
+<p>CNNIC 在《2019 年第 43 次中国互联网络发展状况统计报告》中称，截至 2018 年 12 月，我国城镇地区互联网普及率为 74.6%，较 2017 年底提升 3.6 个百分点；农村地区互联网普及率为 38.4%，较 2017 年底提升 3.0 个百分点。此外，从 15、16 年开始，智能手机迅速向三四线城市以下普及。</p>
+
+<p><strong>3. 电商获客成本不断上涨</strong></p>
+
+<p>电商行业经过十多年的发展，其模式不断成熟，流量被淘宝、京东等几家大平台占据，获客成本和运营成本不断上涨。</p>
+
+<p>根据毕马威发布的《中国零售服务业白皮书》，在 2015 至 2016 的关键临界点，平均线上获客成本突破 200 元，已超过线下获客成本。</p>
+
+<p><strong>4. 微信生态承载大量流量</strong></p>
+
+<p>根据微信官方发布的《2018 微信数据报告》，截至 2018 年 9 月，微信月活用户达到 10.82。此外，QuestMobile 在《中国移动互联网 2018 年度大报告》中称，微信人均单日使用时长同比增加近 6 分钟，生态价值不断放大。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/2.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/2.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<h3 id="三-市场背景">三、市场背景</h3>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/3.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/3.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<h3 id="四-用户分析">四、用户分析</h3>
+
+<p><strong>1. 用户画像</strong>
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/4.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/4.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<p><strong>2. 用户分析</strong></p>
+
+<p>根据国家统计局数据，2018 年，农村居民人均可支配收入为 14617 元，相当于每天可支配收入仅为 40 元。而全国农村人口数量有 57661 万人，占比 41.48%。此外，三四线城市城区人口数为一线城市的近 3 倍，是二线城市的 2 倍左右，三线以下城市及农村地区总共有约 10 亿人。</p>
+
+<p>因此，下沉市场体量巨大，相应其增长空间也非常之大。</p>
+
+<blockquote>
+<p>消费升级不是让上海人去过巴黎人的生活，而是让安徽安庆的人有厨房纸用、有好水果吃。——黄峥</p>
+</blockquote>
+
+<p>拼多多如何契合下沉市场人群？</p>
+
+<p>下沉市场人群的三大特点：熟人型社会、价格敏感属性、闲暇娱乐属性（参考：《还原一个真实的下沉市场》，36 氪）。</p>
+
+<p>（1）熟人型社会：基于亲戚好友与邻里关系而形成的复杂庞大的关系网络，人们因为熟悉而相互帮衬，因此得以实现病毒式传播的社交裂变。</p>
+
+<p>（2）价格敏感属性：可支配收入较少，因此普遍对商品的价格变动极为敏感，微小的价格波动都有可能改变消费决策，让产品金钱刺激的转化效果倍增。</p>
+
+<p>（3）闲暇娱乐属性：在工作之余，还拥有大把的时间可以供消遣娱乐，因此愿意为了优惠而发动亲朋好友拼团购买，完全不会觉得这是在浪费时间。</p>
+
+<h3 id="五-产品核心分析-价格刺激">五、产品核心分析：价格刺激</h3>
+
+<p><strong>1. 低商品均价与全平台包邮</strong></p>
+
+<p>拼多多产品核心的其中之一，就是其具有竞争力和吸引力的商品价格和全平台包邮。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/5.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/5.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<p>淘宝复杂的推荐规则，以及近几年的去爆款化、进行低价屏蔽和对特色化店铺的流量倾斜，排挤出一批低价走量卖货的卖家。而如今的拼多多则鼓励卖家降价引流，薄利多销，规则相对简单得多，而且依靠腾讯的社交流量也不愁没有买家上门，因此拥有低价货源的商家便倾巢而出。在新的平台，就有重新洗牌的机会，原先的腰部和尾部卖家必然选择抓住机会，主动让利，换取流量。</p>
+
+<p>此外，拼多多还通过 C2B 模式，聚合大量用户订单需求，反向进行大规模生产，从而形成足够的让利空间来进一步压缩价格，实现正向循环。</p>
+
+<p><strong>2. 拼团</strong></p>
+
+<p>拼团是拼多多的一项基础功能，也是其与其它电商的不同特色之处。对于平台内的所有商品，用户都可以通过开团或参团的方式，在达到一定人数要求后，用比原价更低廉的价格购买相同的商品。</p>
+
+<p>如今拼多多的拼单模式并不强制参与熟人或自己发起的团，用户可以直接加入其它用户还未满员的团。即使此时没有其他用户正在拼单，用户也可以选择与陌生人插队拼单，不需要满团就能享受到更加优惠的价格。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/6.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/6.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+拼多多已经过了用户激速增长的导入期，因此用户的存留比拉新更重要。如果每次购买商品的过程中都要为了优惠而消耗用户时间和社交货币去寻找拼团的朋友，渐渐用户会因为过高的门槛而放弃拼多多。因此为了便捷快速的购买体验，让用户能以拼团形式直接购买很有必要。</p>
+
+<p>此外，拼团价达到了经济学中“价格锚点”的作用，即通过一个商品的高价，来让消费者感知到实际想买的商品的性价比高。通过在拼团价旁边展示更高的单独购买价，让用户感知拼单带来的优惠，产生“买了就是占便宜”的心理，从而促使用户产生购买行为。</p>
+
+<p><strong>3. 签到领现金</strong></p>
+
+<p>和淘宝的签到领淘金币以及京东的签到领京豆相同，拼多多的签到领现金位于 APP 首页的图标栏，签到路径端较短，用户每天完成签到即可获得一定的现金奖励。相比可抵现金的京豆和淘金币，可提现的现金奖励给用户带来更直接的刺激，促进用户活跃，让用户逐渐养成每天进入 APP 的习惯，从而增加用户购物的几率。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/7.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/7.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+第一次签到的金额奖励数字最大，达到了提现金额（10 元）的近一半，让用户觉得距离可提现的日子不远了；然而第二次及后面的奖励金额均只有几分钱，连续数次后用户签到的积极性可能会降低。要增加用户满足感，可以对现金数字进行倍数转换，例如趣头条用 10000 金币=1 元人民币的汇率，每次获得的现金均用金币表示；即使只有几分钱，展示成几百金币时，也能给用户一种收获很大的感觉。</p>
+
+<p>除了每日签到的现金奖励之外，累计签到满一定天数后还可以获得勋章奖励，用户可在个人中心的勋章墙进行查看。然而拼多多没有展示连续签到奖励，使得断签不会让用户产生损失感。京东则把连续签到激励点设置在了第 3 天、第 7 天和第 14 天，激励用户保持签到习惯。</p>
+
+<p>签到由于涉及现金，还需考虑风控问题，对羊毛党进行防范。经过测试多个账号后发现，同一台设备在一天中只能给一个账号进行签到，在其余账号的签到页面上均会显示“今日已签到，请明天再来”。因此，对多个账号在同一设备的限制加大了薅羊毛的门槛。</p>
+
+<p>此外，每次提现只能提出完整的 10 元，此般考虑可能由于这种规则下，用户账户里总会有遗留的零头没有取出来，因此用户会持续希望凑到下一个 10 元。</p>
+
+<p><strong>4. 限时优惠红包</strong></p>
+
+<p>用户每天进入拼多多，都有一定几率收到平台赠送的优惠券。优惠券的发放模仿了微信红包的领取界面，用户看到后就会根据以往习惯下意识点击“開”，没有任何学习成本，还能借助微信红包外观带来的刺激感促使用户领取优惠。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/8.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/8.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+此外，不同于某段日期内有效的店铺优惠券，拼多多平台发放的全场通用优惠券的有效时间只在数小时内，并且卷面上有“快过期”和动态的有效时间倒计时，精确到秒。这些信息都会给用户带来强烈紧迫感，并且利用“损失厌恶心理”（相比“渴望得到未得到的” ，用户更“害怕失去已得到的”），加大用户冲动消费的几率。</p>
+
+<p>所谓运营，即是利用了用户的“贪”“嗔”“痴”。</p>
+
+<blockquote>
+<p>我们的核心不是便宜，而是满足用户心里占便宜的感觉。</p>
+
+<p>——黄峥</p>
+</blockquote>
+
+<h3 id="六-产品核心分析-社交传播">六、产品核心分析：社交传播</h3>
+
+<p><strong>1. 砍价免费拿</strong></p>
+
+<p>用户通过个人中心-砍价免费拿，可以进入砍价商品列表，选择心仪的商品后分享给亲属好友帮忙砍价，每次砍掉的金额随机。如果在 24 小时内成功砍至 0 元，即可免费拿到该商品。因此，砍价通过对用户的高刺激（免费拿高价商品）促进分享，利用用户的社交关系链达到比广告的转化率要高出许多的拉新和促活效果。</p>
+
+<p>砍价免费拿的商品列表内有标价为几十元的雨伞，也有上千元的扫地机器人。对于价值较高的商品，用户首次砍价能砍掉上百块，而且如果使用了系统赠送的砍价折扣券，比如五折折扣券，就能直接再砍掉商品价格的一半，对用户来说非常具有激励性。</p>
+
+<p>与现金签到的套路一样，距离目标数字越近砍掉的价格越小，甚至后期可能会出现一分钱甚至零元的砍价。然而此时，用户已经花费时间和精力找了很多人帮忙，因此出于沉没成本，反而可能更加努力地继续寻求更多人的帮助，毕竟“就差这么一点点了”。此外，对应新用户的价值于平台更大，新用户砍掉的价格也远大于老用户，借此鼓励用户把砍价链接分享给还没有注册下载过拼多多的朋友。</p>
+
+<p>而砍价严格的时间和目标要求（24 小时内砍至 0 元），一方面给了用户紧迫感，另外一方面只要用户中途放弃或没有达到目标就获得不了任何优惠，相当于平台没有付出任何代价，就获得了用户砍价过程中所求助的老用户的活跃和新用户的转化。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/9.png" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/9.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+站在被分享用户的角度，首先拼多多分享文案的标题模仿好友语气进行求助，详情说明里也不忘介绍福利，使得用户出于互惠互利、社交压力、好奇心等多重因素的驱动下去拼多多帮忙砍价。另外，自动生成的文案也减少了分享用户需要思考的时间。</p>
+
+<p>进入砍价页面后，文案从求助变成了邀请，比如“一起来砍价 0 元拿”“帮我砍价有机会获得 xx 元现金券”，试图将用户从帮忙砍价转换为参与。此外，在完成砍价后用户还有很大几率获得砍价折扣券，再度强化砍价活动的吸引力，增加新用户的转化率和二次分享率，从而达到低成本病毒传播式的拉新效果。</p>
+
+<p><strong>2. 幸运人气王</strong></p>
+
+<p>幸运人气王的入口位于个人中心-大奖必中，用户可以在选择心仪的商品并支付 1 分钱后参与抽奖活动。商品列表包含价值极高的奖品，比如 iPhone XR，甚至宝马汽车。在商品下方有往期获奖用户的用户名、地区和评论，并通过高质量的晒图为抽奖活动背书，增强用户对活动的信任感。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/10.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/10.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+如果用户没有中奖，支付的一分钱会退还给用户。那么拼多多靠这个活动如何获得收益？答案藏在抽奖规则的幸运码中。用户完成支付后并未直接获得抽奖资格（提示中使用的是更具有吸引力的“中奖资格”），而是要把链接发送给一个微信好友后才能获得用于抽奖的一个幸运码，保证参与抽奖的用户至少完成了一次分享。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/11.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/11.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+分享完毕后，任务列表里面展现出了更加多样的幸运码获取方式，包括继续分享、参与其它推荐抽奖、抢他人的幸运码、邀请好友参与。除了邀请好友参与，其余任务均有次数限制，因此用户要获得更多幸运码，最终还是要通过门槛最高的把好友邀请进此活动的方式。</p>
+
+<p>幸运码获得的越多，按概率来说中奖几率也越大。而除此之外，幸运码数排名前 2 的也必得奖品。相比几万分之一的中奖概率，这种“稳稳的幸福”更能激励用户争取幸运码。</p>
+
+<p><strong>3. 天天领现金</strong></p>
+
+<p>天天领现金的入口位于个人中心-天天领现金，用户可以选择不同档次的红包，金额越大相应难度也越大，然后邀请好友拆红包。好友每次拆开金额随机，只有当红包在 24 小时内全部拆完后才能提现。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/12.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/12.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+天天领红包机制的内核与砍价免费拿一样，用户通过赠送的提现加速卡首次能够直接拆掉一半金额，获得激励感，接下来就需要通过不断进行社交分享以接近目标。此处的隐藏规则同样是新用户拆得金额多，老用户拆得金额少，从而鼓励用户主动拉新，形成更加广泛的传播链条。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/13.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/13.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+为引导用户分享，拼多多还为用户不断设置阶段性的小目标，并通过“多拆得”“已拆”“不要放弃”等词语鼓励用户。在用户完成多次分享后，还有惊喜宝箱作为穿插其中的奖励，增强用户的兴奋感，不过依旧需要通过分享来获得。</p>
+
+<h3 id="七-产品核心分析-游戏化体验">七、产品核心分析：游戏化体验</h3>
+
+<p><strong>1. 多多果园</strong></p>
+
+<p>拼多多除了有多样化的运营玩法之外，还通过游戏增强用户的互动感，与平台利益达成了良好的融合。</p>
+
+<p>个人中心内的多多果园类似多年前风靡的开心农场养成游戏。用户选择树苗之后，通过不断浇水让其成长，最终收获果实，达成目标。而多多果园的特别之处在于，此款虚拟游戏的任务和奖励与现实打通，用户可以通过在平台内浏览商品或拼单等多种任务获得让树苗成长的水滴，最终当果实成熟后，一箱真实水果也会送到用户家中。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/14.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/14.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+因此，多多果园在增强互动感的同时，促进用户活跃，刺激用户消费，而且相比只有虚拟奖励的养成游戏，多多果园给用户带来的激励感更足。</p>
+
+<p>另外，把水果作奖励的好处在于，一方面属于大众消费品，能满足多数用户喜好，另外一方面作为保鲜期短的商品，赠送给用户还能解决滞销问题。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/15.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/15.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<p><strong>2. 多多爱消除</strong></p>
+
+<p>消除类游戏凭其玩法简单易上手、轻松解压画风萌的特点，成为风靡多年热度不减的大众休闲益智游戏。拼多多的个人中心-多多爱消除也是一款消除游戏。不同之处在于其用于购买过关道具的游戏货币可以通过下单获得，体力值可以通过浏览商品获得，而通关后不仅可以解锁下一关，还可以获得购物抵扣金。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/16.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/16.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+因此，拼多多通过休闲益智游戏的吸引力，增加用户对平台的粘度甚至成瘾性，并借助游戏的强变现能力，将道具和奖励与平台消费打通，促使用户浏览更多商品、下单更多商品，以及利用游戏中收获的抵扣金拼团获得更多钻石，打通从购物到游戏再到购物的闭环。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/17.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/17.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<blockquote>
+<p>拼多多致力于打造一个网络虚拟空间和现实世界相融合的新 “空间”，在这里用户可以用最划算的价钱买到想要的东西，同时也会在里面收获很多快乐。</p>
+
+<p>——拼多多招股书</p>
+</blockquote>
+
+<h3 id="八-产品核心分析-其它特点">八、产品核心分析：其它特点</h3>
+
+<p><strong>1. 首页无搜索框</strong></p>
+
+<p>除了前面的三大核心：价格刺激、社交传播、游戏化体验之外，拼多多还有其它大多数电商产品所不具备的特点，比如首页不设搜索框。</p>
+
+<p>这一点顺应了其“大卖场”特性，即更强调用户通过“逛”来发现便宜实惠的商品，而不是和淘宝、京东一样，通过具有强目的性的搜索。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/18.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/18.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<p>背后的原因是，拼多多作为拥有价格优势的电商，可以借助其优惠的强大吸引力，让对某类商品本不具备购买计划的人群产生购买欲望。此外，拼多多社交电商的定位也使其在更多场景下通过人和算法来进行商品推荐，因此偏向“货找人”而非“人找货”。</p>
+
+<p><strong>2. 无购物车</strong></p>
+
+<p>拼多多没有购物车，所以用户的购买流程相比其它产品少了添加进购物车这一动作，使得购买转化路径更短。</p>
+
+<p>为什么淘宝、京东等综合电商需要购物车？阿里前产品经理苏杰在《淘宝十年产品事》中写道，淘宝以前也没有购物车，但是这样有两个问题：1. 同店铺购买多件商品的运费会重复计算，卖家每次要手动为买家修改运费，增加人力成本和沟通成本；2. 单个商品的购买模式让店铺难以进行促销，而购物车的出现衍生出了多商品的订单概念，使得店铺促销成为可能。</p>
+
+<p>以上也同时解释了为什么拼多多可以砍掉购物车：1. 拼多多商品全平台包邮，不需要购物车衍生出的多商品订单概念来进行运费计算；2. 拼团模式一般针对单个商品，允许多个商品同时下单会增加拼团流程复杂度，此外拼多多也不需要组合商品的价格优惠来吸引顾客，单个商品折扣玩法已经足够了。</p>
+
+<p><strong>3. 不断浮现用户拼单横幅</strong></p>
+
+<p>拼多多的首页有不断浮现的用户拼单横幅，包含的信息有商品图片、拼单用户的用户名及所在地区，点击后跳转到商品信息，用户可以一键参与拼单。
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/19.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/19.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+此功能让用户可以查看他人正在拼团的商品，满足用户好奇心，并利用从众心理，激发用户的购买欲。此外，用户名和所在地区增加了拼单信息的真实可靠性。有了其他用户的背书，用户对平台的信任感也会增加。</p>
+
+<h3 id="九-竞品分析">九、竞品分析</h3>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/20.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/20.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<h3 id="十-现存困境">十、现存困境</h3>
+
+<p><strong>1. 假货及山寨商品</strong></p>
+
+<p>关于拼多多假货和山寨商品的负面评论一直以来不绝于耳。有网友于拼多多上市后在视频网站放出《100 元究竟能在“某多多”上买到多少山寨货？》，里面展示了云南中药牙膏，翢牌香皂和月亮之上洗衣液等山寨商品，拼多多也被调侃为“拼夕夕”。</p>
+
+<p>对于假货，平台可以强加管控、严厉打击，通过罚款和降权等方式处理违规商家，对山寨商品的处理却让拼多多进退维谷。</p>
+
+<p>那些价格与正品相差不大、纯粹蹭品牌热度的山寨商品，会对被误导购买的消费者会产生利益损害，要进行严格整治；而那些与正品价格相差极大的山寨商品，却可能正好对准了一批消费能力较低的拼多多用户，成为于他们而言更具性价比的选择。</p>
+
+<p>平台需要对供应链组织方式进行持续优化改革，引导那些产业里相对落后的厂商走向自主品牌化的道路，让用户既能享受无品牌溢价的商品，也不会再被山寨商品所欺骗。但小米花了整整 9 年来“消灭中国山寨机”，作为平台的拼多多，如何以一时之力解决，又能否承担得起这样的重任？</p>
+
+<p><strong>2. 走淘宝走过的路</strong></p>
+
+<p>尽管拼多多的崛起让阿里有些措手不及，但这条发展之路：靠低价爆款策略获得大量用户、被指假货泛滥而面临口碑危机、平衡买家卖家权益中遭到卖家抗议等，阿里也许并不陌生，十几年前的淘宝也经历过，只是如今拼多多面对下沉市场把这条路又走了一遍。</p>
+
+<p>2013 年，淘宝调转方向，提出“千人千面”的推荐算法，通过用户购物习惯进行相关推荐，并避免商家纷纷模仿爆款产生的产品同质化，从而提升用户的购物体验。阿里也开始了对假货的大力治理，并于 2015 年发布“全网举报机制”。</p>
+
+<p>如今，当淘宝的流量向有特色、有文化内涵的品牌和店铺倾斜时，拼多多的低价战略则在鼓励商家薄利多销，让低价爆款成为商家的盈利出路。</p>
+
+<p>这种平台策略的差异，正好对应上不同的产品生命周期，以及不同的用户生命周期：对于刚上手电商的用户，简单粗暴的低价格才是真正能吸引他们的地方，因此商家的薄利多销也是在平台初期最能有效吸引大量用户的方式。然而随着消费升级的趋势和用户生命周期的成熟，用户也会开始追求品牌与个性化。</p>
+
+<p>淘宝已经随着五环内人群完成了当前阶段的转型，而拼多多还陪着下沉市场进行着低价爆款的狂欢。但当下沉市场人群也开始追求特色和品质的时候，拼多多要如何确保用户群不会流向淘宝？是否如有些人的预测，如今的拼多多只是在帮淘宝进行下沉市场的用户教育？</p>
+
+<p>“干掉淘宝的不可能是第二个淘宝”，拼多多唯有走出自己的一条路，才有未来。</p>
+
+<p><strong>3. 离迪士尼与 Costco 还有多远</strong></p>
+
+<p>那么，拼多多给自己规划的路伸向何方？黄峥在招股书中称，拼多多要成为“Costco”和“迪士尼”的结合体，即集高性价比产品和娱乐为一体。但他也承认，距离这个目标，拼多多还有很远的距离。</p>
+
+<p>Costco 通过超低 SKU 策略降低进货和库存成本，并通过超大的订单数量获得更强的议价能力。由于商品利润被压到极低，Costco 商业利润的来源主要是会员费，而会员模式同时也提高了用户的忠诚度。</p>
+
+<p>全品类非标运营的拼多多无法实现低 SKU 策略，压缩成本需发力于 C2B 模式，聚合大量用户订单需求，反向进行大规模生产。然而拼多多涵盖了超过一百多万商家，流程上无论是采购、品控、销售、售后，都难以进行整体监督和把控。</p>
+
+<p>因此，即使拼多多能实现“价”格的实惠，“性”能方面要如何保障？整体性价比又如何对垒小米有品、网易严选与京造等同样深入供应链的品质电商？</p>
+
+<p>从娱乐方面来看，拼多多已经在 APP 尝试实现游戏与电商的结合。然而迪士尼不仅代表娱乐，还依托 IP 对友谊、家庭、勇气与爱等价值内核进行延伸。拼多多把娱乐性融入到电商，能够给用户带来体验快感，但还没能实现给用户带来迪士尼般的温暖。</p>
+
+<h3 id="十一-如果我是-pm">十一、如果我是 PM</h3>
+
+<p>抽卡等具有概率不确定性且潜在高回报的系统可以给游戏玩家带来强烈刺激感。为给产品增加更多游戏化乐趣，为用户体验带来更多新奇感，并且提高个性推荐商品和助贫地区农产品的更多曝光，上线多多扭蛋机，入口在首页或个人中心。</p>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/21.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/21.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<p>多多扭蛋机首期上线三台：猜猜喜欢扭蛋机，特产扭蛋机和水果扭蛋机，每台机器的扭蛋都会开出折扣商品或保底优惠券。</p>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/22.jpg" />
+    </div>
+    <a href="/%e6%8b%bc%e5%a4%9a%e5%a4%9a%e4%ba%a7%e5%93%81%e5%88%86%e6%9e%90/22.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+<p>具体玩法：</p>
+
+<p>用户每日首次进入多多扭蛋机可直接获得一张扭蛋券，适用于所有扭蛋机。点击扭一次后，会有扭蛋掉出机器，用户扭开后可以看到中的折扣商品或优惠券。此外，如果用户一次性扭的次数足够多，还有概率保底，比如一次性扭十次的，必定获得一个六折以下的优惠商品。</p>
+
+<p>扭蛋券获取方法：</p>
+
+<p>和平台内其它游戏（比如多多果园、多多爱消除、多多旅行）一致，可以通过浏览商品、邀请新用户、完成拼单等获得。</p>
+
+<h3 id="十二-总结">十二、总结</h3>
+
+<p>总体而言，拼多多顺应智能手机迅速向三四线及以下城市迅速普及的潮流，通过社交传播、价格刺激和游戏化体验这三方面优势，契合下沉市场的熟人型社会、价格敏感属性与闲暇娱乐属性，在电商红海中找到低线城市的真空，同时也为五环内人群带来了不同的购物体验。</p>
+
+<p>产品方面来看，拼多多的设计处处是“心机”，用超低价、免费等字眼吸引用户下单或参与。通过不断的阶段性奖励激励用户分享，并借助多样化的游戏玩法，给用户定好目标，让用户不需要进行过多思考只用顺着指引行动，从而达成活跃、留存、营收和拉新的效果。</p>
+
+<p>下沉市场巨大的体量，配合上社交链的病毒式传播，拼多多的快速发展令人咋舌。然而，拼多多也在面对淘宝经历过的苦难，前路似乎也不那么清晰，比如曾经表示不做天猫模式的黄峥在拼多多悄然上线品牌馆。如果拼多多一直停留在靠低价和社交吸引用户的原地，随着消费升级潮的用户可能流向淘宝天猫，可如果拼多多朝向淘宝的方向走，又可能失去下沉市场还未挖掘完全的巨大流量。</p>
+
+<p>敢问路在何方？拼多多所望向的远方，是“由分布式智能代理网络驱动的 Costco 和迪士尼的结合体”，不论何时能到达，亦或是是否能到达，路都在脚下。</p>
+
+<blockquote>
+<p>乔布斯在苹果复出的时候曾拍过一个广告，里面说：你可以赞扬他，你可以侮辱他，你说他什么都行，但有一点你不能做到，那就是你不能忽视他。
+——黄峥</p>
+</blockquote>
+
+                        </div>
+
+                        
+
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">开博大吉</a></li>
+        
+        <li><a href="/about/">关于我</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            没有标签
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://kexinlin.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://kexinlin.github.io/posts/%E5%BE%AE%E8%A7%86vs%E6%8A%96%E9%9F%B3/" title="微视 vs 抖音，为何腾讯未能实现后发先至">微视 vs 抖音，为何腾讯未能实现后发先至</a>
+    </li>
+    
+    <li>
+        <a href="https://kexinlin.github.io/posts/%E6%8B%BC%E5%A4%9A%E5%A4%9A/" title="拼多多社交与低价的游戏化狂欢">拼多多社交与低价的游戏化狂欢</a>
+    </li>
+    
+    <li>
+        <a href="https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" title="开博大吉">开博大吉</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://kexinlin.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="https://kexinlin.github.io">林可欣的个人博客 By 林可欣</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        
+        (function () {
+            $("pre code").parent().addClass("line-numbers")
+        }());
+
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+    <script src="/js/load-photoswipe.js"></script>
+
+</body>
+</html>
