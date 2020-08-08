@@ -6,18 +6,18 @@
     <description>Recent content in Posts on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 03 Aug 2020 22:39:01 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 23:37:18 +0800</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>浅析URL</title>
-      <link>https://kexinlin.github.io/posts/%E6%B5%85%E6%9E%90url/</link>
-      <pubDate>Mon, 03 Aug 2020 22:39:01 +0800</pubDate>
+      <title>JavaScript的诞生</title>
+      <link>https://kexinlin.github.io/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <pubDate>Sat, 08 Aug 2020 23:37:18 +0800</pubDate>
       
-      <guid>https://kexinlin.github.io/posts/%E6%B5%85%E6%9E%90url/</guid>
-      <description>URL URL 全程为 Uniform Resource Locator，包括的部分有：协议、域名或 IP、端口号、路径、查询字符串、锚点。 协议：规定请求的格式、响应的格式 域名或 IP：定位设备 端口号：定位服务 路径：请求不同页面 查询字符串：请求同一个页面不同内容 锚点：请求同一个内容的不同位置 DNS 的作用 DNS 全称为 Domain Name System。 在终端上键入nslookup &amp;lt;域名&amp;gt;，会展示通过 DNS 获取到的域名对应 IP。 IP 的作用是什么 IP 的作用是用于定位设备。 在终端上键入ping &amp;lt;域名&amp;gt;，会展示请求该域名时的对应 IP。 域名是什么，分别哪几类域名 域名是 IP 的别称。 域名分为顶级域名、一级域名、二级域名、三级域名，它们之间是父子关系。</description>
+      <guid>https://kexinlin.github.io/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <description>诞生 1994 年，网景公司（Netscape）发布了 Navigator 浏览器 0.9 版，但这个版本的浏览器只能用来浏览，不具备与访问者互动的能力。网景公司需要一种网页脚本语言，使得浏览器可以与网页互动。 网景公司的程序员 Brendan Eich 用 10 天时间就把 Javascript 设计出来，命名蹭了 Java 的流量。 浏览器大战 后来微软的浏览器也开始跟进网页脚本语言。为了反击，网景向 ECMA 提交了语言标准，叫 ECMAScript。</description>
     </item>
     
     <item>
