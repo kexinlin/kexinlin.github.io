@@ -6,18 +6,18 @@
     <description>Recent content in Posts on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 11 Oct 2020 10:55:26 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 07:03:48 +0800</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>JS基本语法</title>
-      <link>https://kexinlin.github.io/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
-      <pubDate>Sun, 11 Oct 2020 10:55:26 +0800</pubDate>
+      <title>JS对象基本用法</title>
+      <link>https://kexinlin.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Wed, 04 Nov 2020 07:03:48 +0800</pubDate>
       
-      <guid>https://kexinlin.github.io/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
-      <description>什么是表达式和语句 表达式：一般有值 语句：可能有值也可能没有，一般会改变环境（声明、赋值） 表达式的例子： 1 + 2 语句的例子： a = 3 标识符的规则 第一个字符可以是Unicode字母或$或中文，后面的字符除了前面的之外还可以有数字。 例子： var_ = 1 _var = 1 $var = 1 var1 = 1 if else 语句 语法： if(表达式){语句1}else{语句2} 完整推荐写法： if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 } while for 语句 语法： while(表达式){语句} 用法：表达式为真，执行语句，执行完再判断表达式的真假；表达式为假，不执行语句，执行再之后的语句。 break continue break：退出所有循环 continue：推出当前一次循环 label label：表示一个代码</description>
+      <guid>https://kexinlin.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>声明对象的两种语法 第一种语法： let obj = {a: 123} 第二种语法： let obj = new Object({a: 123}) 如何删除对象的属性 第一种语法： let obj = {a: 123} delete obj.a 第二种语法： let obj = {a: 123} delete obj[&#39;a&#39;] 如何查看对象的属性 // 查看所有属性 let obj = {a: 123} Obj.keys(obj) // 查看自身属性和共有属性 console.dir(obj) // 查看特定属性 obj[&#39;a&#39;] obj.a 如何修改或增加对象的属性 // 直接增加或修改 let obj = {a: 123} obj[&#39;a&#39;] = 456 obj[&#39;b&#39;] = 123 obj.b = 456 &amp;lsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 的区别 &#39;name&#39; in obj返回true，说明&#39;name&#39;属性可能是obj的自身属性，也可能是共有属性。 obj.hasOwnProperty(&#39;name&#39;)返回true，说明&#39;name&#39;属性是obj的自身属性。</description>
     </item>
     
     <item>
