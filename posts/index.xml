@@ -6,18 +6,18 @@
     <description>Recent content in Posts on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 04 Nov 2020 07:03:48 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2020 09:34:16 +0800</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>JS对象基本用法</title>
-      <link>https://kexinlin.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Wed, 04 Nov 2020 07:03:48 +0800</pubDate>
+      <title>JS函数的执行时机</title>
+      <link>https://kexinlin.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Thu, 05 Nov 2020 09:34:16 +0800</pubDate>
       
-      <guid>https://kexinlin.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
-      <description>声明对象的两种语法 第一种语法： let obj = {a: 123} 第二种语法： let obj = new Object({a: 123}) 如何删除对象的属性 第一种语法： let obj = {a: 123} delete obj.a 第二种语法： let obj = {a: 123} delete obj[&#39;a&#39;] 如何查看对象的属性 // 查看所有属性 let obj = {a: 123} Obj.keys(obj) // 查看自身属性和共有属性 console.dir(obj) // 查看特定属性 obj[&#39;a&#39;] obj.a 如何修改或增加对象的属性 // 直接增加或修改 let obj = {a: 123} obj[&#39;a&#39;] = 456 obj[&#39;b&#39;] = 123 obj.b = 456 &amp;lsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 的区别 &#39;name&#39; in obj返回true，说明&#39;name&#39;属性可能是obj的自身属性，也可能是共有属性。 obj.hasOwnProperty(&#39;name&#39;)返回true，说明&#39;name&#39;属性是obj的自身属性。</description>
+      <guid>https://kexinlin.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      <description>let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 这段代码为什么会打印6个6？ 因为setTimeout(func,time)是在一定时间时间后执行func函数。浏览器引擎按顺序执行程序，遇到setTimeout会将func函数放到执行队列中，等到主程序执行完毕之后，才开始从执行队列（队列中可能有多个待执行的func函数）中按照time延时时间的先后顺序取出来func并执行。即使time=0，也会等主程序运行完之后，才会执行。 而主程序里，全局变量i在for循环里依次被设定为0、1、2、3、4、5、6，那么在setTimeout里的console.log(i)执行式，i的值已经为6了，那么六次的定时函数都会共用i=6这个</description>
     </item>
     
     <item>

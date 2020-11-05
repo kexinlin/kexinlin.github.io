@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>归档 | 林可欣的个人博客</title>
-    <meta property="og:title" content="归档 - 林可欣的个人博客">
+    <title>JS函数的执行时机 | 林可欣的个人博客</title>
+    <meta property="og:title" content="JS函数的执行时机 - 林可欣的个人博客">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2019-05-01T20:30:26&#43;08:00">
+    <meta property="article:published_time" content="2020-11-05T09:34:16&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2019-05-01T20:30:26&#43;08:00">
+    <meta property="article:modified_time" content="2020-11-05T09:34:16&#43;08:00">
         
     <meta name="Keywords" content="互联网,产品经理,互联网求职,互联网资讯,产品分析,BAT,博客,计算机科学,软件工程">
-    <meta name="description" content="关于产品经理的求职与成长">
+    <meta name="description" content="JS函数的执行时机">
         
     <meta name="author" content="林可欣">
-    <meta property="og:url" content="https://kexinlin.github.io/archives/">
+    <meta property="og:url" content="https://kexinlin.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
@@ -38,7 +38,6 @@
         <link rel="stylesheet" href="/css/hugo-easy-gallery.css">
     
 </head>
-
 
 <body>
 <header id="header" class="clearfix">
@@ -60,7 +59,7 @@
                     
                     <a  href="https://kexinlin.github.io/contact/" title="联系我">联系我</a>
                     
-                    <a class="current" href="https://kexinlin.github.io/archives/" title="归档">归档</a>
+                    <a  href="https://kexinlin.github.io/archives/" title="归档">归档</a>
                     
                 </nav>
             </div>
@@ -70,36 +69,85 @@
 
 
 <div id="body">
+        
+        
     <div class="container">
         <div class="col-group">
 
             <div class="col-8" id="main">
-                <div class="post-archive">
-                    
-                    <h2>2020</h2>
-                    <ul class="listing">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">JS函数的执行时机</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2020年11月5日
+                        </date>
                         
-                        <li>
-                            <span class="date">2020/11/05</span>
-                            <a href="https://kexinlin.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" title="JS函数的执行时机">JS函数的执行时机</a>
-                        </li>
                         
-                    </ul>
-                    
-                    <h2>2019</h2>
-                    <ul class="listing">
                         
-                        <li>
-                            <span class="date">2019/05/02</span>
-                            <a href="https://kexinlin.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" title="开博大吉">开博大吉</a>
-                        </li>
-                        
-                    </ul>
-                    
+                        <div class="post-content">
+                            
 
+<pre><code class="language-javascript">let i = 0
+for(i = 0; i&lt;6; i++){
+  setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+}
+</code></pre>
+
+<h4 id="这段代码为什么会打印6个6">这段代码为什么会打印6个6？</h4>
+
+<p>因为<code>setTimeout(func,time)</code>是在一定时间时间后执行<code>func</code>函数。浏览器引擎按顺序执行程序，遇到<code>setTimeout</code>会将<code>func</code>函数放到执行队列中，等到主程序执行完毕之后，才开始从执行队列（队列中可能有多个待执行的<code>func</code>函数）中按照<code>time</code>延时时间的先后顺序取出来<code>func</code>并执行。即使<code>time=0</code>，也会等主程序运行完之后，才会执行。</p>
+
+<p>而主程序里，全局变量<code>i</code>在<code>for</code>循环里依次被设定为0、1、2、3、4、5、6，那么在<code>setTimeout</code>里的<code>console.log(i)</code>执行式，<code>i</code>的值已经为6了，那么六次的定时函数都会共用<code>i=6</code>这个值</p>
+
+<h4 id="如何让上面代码打印-0-1-2-3-4-5">如何让上面代码打印 0、1、2、3、4、5？</h4>
+
+<pre><code class="language-javascript">for(let i = 0; i&lt;6; i++){
+  setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+}
+</code></pre>
+
+<p>此时定时函数的变量作用域就变为<code>for</code>循环代码块内，每次for循环传给定时器的i值都会变为<code>for</code>循环的私有变量值，达到了预期目的。</p>
+
+                        </div>
+
+                        
+
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/">开博大吉</a></li>
+        
+        <li><a href="/about/">关于我</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            没有标签
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
                 </div>
             </div>
-
             <div id="secondary">
     <section class="widget">
         <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
@@ -190,7 +238,6 @@
 
 
     <script src="/js/load-photoswipe.js"></script>
-
 
 </body>
 </html>
