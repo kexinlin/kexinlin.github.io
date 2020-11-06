@@ -6,19 +6,10 @@
     <description>Recent content on 林可欣的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Nov 2020 09:34:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 00:49:26 -0400</lastBuildDate>
     
 	<atom:link href="https://kexinlin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>JS函数的执行时机</title>
-      <link>https://kexinlin.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
-      <pubDate>Thu, 05 Nov 2020 09:34:16 +0800</pubDate>
-      
-      <guid>https://kexinlin.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
-      <description>let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 这段代码为什么会打印6个6？ 因为setTimeout(func,time)是在一定时间时间后执行func函数。浏览器引擎按顺序执行程序，遇到setTimeout会将func函数放到执行队列中，等到主程序执行完毕之后，才开始从执行队列（队列中可能有多个待执行的func函数）中按照time延时时间的先后顺序取出来func并执行。即使time=0，也会等主程序运行完之后，才会执行。 而主程序里，全局变量i在for循环里依次被设定为0、1、2、3、4、5、6，那么在setTimeout里的console.log(i)执行式，i的值已经为6了，那么六次的定时函数都会共用i=6这个</description>
-    </item>
     
     <item>
       <title>开博大吉</title>
